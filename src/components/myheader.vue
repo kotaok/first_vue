@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <h1 class="header">Header</h1>
+  <div class="header">
+   <div>
+
+   </div>
+   <div>
+     <p>Portfolio</p>
+   </div>
   </div>
 </template>
 
@@ -9,7 +14,16 @@
 
 <style>
 .header {
-  padding: 40px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 15%;
+}
+.header div {
+  width: 45%;
+}
+
+.header div p {
+  font-size: 70px;
+  margin-left: 50px;
 }
 </style>

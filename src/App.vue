@@ -2,9 +2,9 @@
   <div>
     <myheader></myheader>
     <div id="nav">
-      <router-link to="/" class="navmenu">top</router-link>
-      <router-link to="/page2" class="navmenu">profile</router-link>
-      <router-link to="/page3" class="navmenu">works</router-link>
+      <router-link to="/" class="navmenu">Top</router-link>
+      <router-link to="/page2" class="navmenu">About</router-link>
+      <router-link to="/page3" class="navmenu">Works</router-link>
     </div>
     <router-view></router-view>
     <myfooter></myfooter>

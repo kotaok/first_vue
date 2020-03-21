@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="footer">Footer</h1>
-    <p>©︎2020 First-Vue</p>
+    <p>©︎2020 kota</p>
   </div>
 </template>
 

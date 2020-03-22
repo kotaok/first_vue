@@ -57,12 +57,14 @@ export default {
   margin: 0px 5px;
   text-decoration: none;
   color: #000000;
-  border-radius: 35px 5px 35px 5px;
   transition: all 300ms ease;
 }
 
 .navmenu:hover {
-  background-color: rgba(207, 233, 236, 0.767);
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 </style>

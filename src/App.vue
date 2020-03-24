@@ -32,6 +32,7 @@ export default {
     }
   },
 }
+
 </script>
 
 
@@ -68,3 +69,4 @@ export default {
 }
 
 </style>
+

@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <h1 class="title">About</h1>
-    <p>言語/フレームワークなど</p>
+    <p>言語・フレームワーク・ツール</p>
     <ul class="skill">
       <li>HTML・CSS</li>
       <li>JavaScript</li>

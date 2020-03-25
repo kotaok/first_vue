@@ -70,6 +70,7 @@ export default {
 
 body {
   margin: 0;
+  background-color: #F8F9FA;
 }
 
 </style>

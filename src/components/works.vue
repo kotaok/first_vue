@@ -72,17 +72,18 @@ export default {
 .item {
   width: 35%;
   height: 100%;
-  border: solid 1px #c4c4c4;
   margin: 30px 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: all 200ms ease;
+}
+
+.item:hover {
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  opacity: 0.5;
 }
 
 .item img {
   object-fit: cover;
-  transition: all 200ms ease;
-}
-
-.item img:hover {
-  opacity: 0.5;
 }
 
 .dialogtext {

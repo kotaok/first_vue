@@ -1,7 +1,7 @@
 <template>
   <div id="demo">
     <transition-group tag="div" class="list" appear>
-      <div class="item" stagger="70" v-for="item of items" v-bind:key="item.name">
+      <div class="item" v-for="item of items" v-bind:key="item.name">
         <img 
           :src="item.path" 
           :alt="item.name" 
@@ -12,6 +12,8 @@
           dialoglang = item.lang"
           width="100%" height="200px"
         >
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.text }}</p>
       </div>
     </transition-group>
     <div>
@@ -32,9 +34,9 @@ export default {
   data: function() {
     return {
       items: [
-        { name: 'slackbot',path: '/img/slackbot.png',text:'PythonのSlackBotライブラリを使って開発した翻訳Bot。', lang: "主な使用言語/フレームワークなど: Python、Slack API"},
-        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSの練習を兼ねて製作した最初のポートフォリオ。cssのflexboxを学び、レスポンシブ対応のレイアウトを構成できた。', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript"},
-        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ。「N予備校 Webアプリケーションコンテスト2019冬」提出作品', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase"},
+        { name: 'slackbot',path: '/img/slackbot.png',text:'Pythonを使って開発した翻訳Bot。', lang: "主な使用言語/フレームワークなど: Python、Slack API"},
+        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ。', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript"},
+        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ。', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase"},
         { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ。', lang: "主な使用言語/フレームワークなど:PHP"},
         { name: 'portfolio_ver2',path: '/img/portfolio_2.png',text: 'Vue.jsを使って開発した新しいポートフォリオ。', lang: "主な使用言語/フレームワークなど:Vue.js"}
       ],
@@ -71,7 +73,7 @@ export default {
 
 .item {
   width: 35%;
-  height: 100%;
+  height: 350px;
   margin: 30px 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   transition: all 200ms ease;

@@ -2,7 +2,7 @@
   <div class="skill-block">
     <transition-group tag="div" class="list" appear>
       <div class="skill" stagger="70" v-for="skill of skills" v-bind:key="skill.name">
-        <el-progress type="circle" :percentage="skill.percent"></el-progress>
+        <el-progress type="circle" :percentage="skill.percent" :color="color" :size="10"></el-progress>
         <h4>{{ skill.name }}</h4>
       </div>
     </transition-group>
@@ -22,6 +22,7 @@ export default {
         { name: 'Vue.js', percent: 20},
         { name: 'Firebase', percent: 50}
       ],
+      color: "#1FA0FF"
     };
   }
 };
@@ -38,6 +39,10 @@ export default {
 
 .skill {
   margin: 30px 40px;
+}
+
+.skill h4 {
+  font-size: 20px;
 }
 
 .skill-block {

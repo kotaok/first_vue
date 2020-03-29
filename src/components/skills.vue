@@ -37,7 +37,7 @@ export default {
 }
 
 .skill {
-  margin: 5px 40px;
+  margin: 30px 40px;
 }
 
 .skill-block {

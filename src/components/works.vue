@@ -1,15 +1,16 @@
 <template>
   <div id="demo">
     <transition-group tag="div" class="list" appear>
-      <div class="item" v-for="item of items" v-bind:key="item.name">
-        <img 
-          :src="item.path" 
-          :alt="item.name" 
+      <div class="item" v-for="item of items" v-bind:key="item.name" 
           @click="
           dialogVisible = true,
           dialogname = item.name,
           dialogtext = item.text,
           dialoglang = item.lang"
+          >
+        <img 
+          :src="item.path" 
+          :alt="item.name" 
           width="100%" height="200px"
         >
         <h4>{{ item.name }}</h4>
@@ -67,7 +68,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 65%;
+  width: 100%;
   margin: auto;
 }
 

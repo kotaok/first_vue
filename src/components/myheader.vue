@@ -1,9 +1,6 @@
 <template>
   <div class="header">
    <div>
-
-   </div>
-   <div>
      <p>Portfolio</p>
    </div>
   </div>
@@ -17,9 +14,6 @@
   display: flex;
   justify-content: center;
   padding: 15%;
-}
-.header div {
-  width: 45%;
 }
 
 .header div p {

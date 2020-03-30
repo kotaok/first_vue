@@ -6,7 +6,9 @@
       <router-link to="/page2" class="navmenu">About</router-link>
       <router-link to="/page3" class="navmenu">Works</router-link>
     </div>
-    <router-view></router-view>
+    <transition mode="out-in">
+      <router-view></router-view>
+    </transition>
     <myfooter></myfooter>
   </div>
 </template>
@@ -50,18 +52,25 @@ export default {
 #nav {
   display: flex;
   justify-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navmenu {
   font-weight: bold;
-  padding: 20px;
+  padding: 15px 25px;
   margin: 0px 5px;
   text-decoration: none;
-  color: #000000;
+  color: #22223F;
+  border-bottom: solid 2px #22223F;
+  background-color: rgba(248, 249, 250, 0.733);
   transition: all 300ms ease;
 }
 
 .navmenu:hover {
+  border-bottom: solid 2px #15d636;
   -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
@@ -71,6 +80,14 @@ export default {
 body {
   margin: 0;
   background-color: #F8F9FA;
+}
+
+.v-enter-active, .v-leave-active {
+  transition: opacity .3s;
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0;
 }
 
 </style>

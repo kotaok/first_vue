@@ -39,7 +39,7 @@ export default {
         { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ。', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript"},
         { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ。', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase"},
         { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ。', lang: "主な使用言語/フレームワークなど:PHP"},
-        { name: 'portfolio_ver2',path: '/img/portfolio_2.png',text: 'Vue.jsを使って開発した新しいポートフォリオ。', lang: "主な使用言語/フレームワークなど:Vue.js"}
+        { name: 'portfolio_ver2',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ。', lang: "主な使用言語/フレームワークなど:Vue.js"}
       ],
       dialogVisible: false,
       dialogname: "test",

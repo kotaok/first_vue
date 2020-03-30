@@ -10,7 +10,6 @@
       <router-link to="/page3" class="jump">作品をみる</router-link>
       </div>
     <router-view></router-view>
-    <myfooter></myfooter>
     </div>
   </div>
 </template>
@@ -27,6 +26,22 @@ export default {
 </script>
 
 <style>
+
+@keyframes Anime {
+0% {
+    opacity: 0;
+    transform: translateX(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+.title {
+  animation-name: Anime;
+  animation-duration: 1.5s;
+}
 
 .about-block {
   width: 70%;

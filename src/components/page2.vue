@@ -4,7 +4,7 @@
     <myprofile></myprofile>
     <div class="about-block">
       <p><font-awesome-icon :icon="['fas','code']" size="2x"/></p>
-      <p class="text">言語・フレームワークなど</p>
+      <p class="text">言語・フレームワーク、ツールなど</p>
       <myskills></myskills>
       <div id="nav">
       <router-link to="/page3" class="jump">作品をみる</router-link>

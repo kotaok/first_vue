@@ -2,8 +2,8 @@
   <div class="skill-block">
     <transition-group tag="div" class="list" appear>
       <div class="skill" stagger="70" v-for="skill of skills" v-bind:key="skill.name">
-        <el-progress type="circle" :percentage="skill.percent" :color="color" :size="10"></el-progress>
-        <h4>{{ skill.name }}</h4>
+        <!-- <el-progress type="circle" :percentage="skill.percent" :color="color" :size="10"></el-progress> -->
+        <p>{{ skill.name }}</p>
       </div>
     </transition-group>
   </div>
@@ -14,13 +14,19 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: 'HTML・CSS', percent: 60},
+        { name: 'HTML&CSS', percent: 60},
         { name: 'JavaScript', percent: 30},
         { name: 'C++', percent: 30},
         { name: 'Python', percent: 20},
         { name: 'Node.js/Express', percent: 40},
         { name: 'Vue.js', percent: 20},
-        { name: 'Firebase', percent: 50}
+        { name: 'Firebase', percent: 50},
+        { name: 'heroku'},
+        { name: 'VSCode'},
+        { name: 'VirtualBox'},
+        { name: 'vagrant'},
+        { name: 'Git'},
+        { name: 'GitHub'},
       ],
       color: "#1FA0FF"
     };
@@ -38,11 +44,13 @@ export default {
 }
 
 .skill {
-  margin: 30px 40px;
+  margin: 10px;
 }
 
-.skill h4 {
+.skill p {
   font-size: 20px;
+  padding: 10px 15px;
+  border: solid 1px #22223f;
 }
 
 .skill-block {

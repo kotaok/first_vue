@@ -1,6 +1,6 @@
 <template>
   <div class="block">
-    <h1 class="title">Works</h1>
+    <h1 class="title">WORKS</h1>
     <p>これまでに製作した作品</p>
     <myworks></myworks>
   </div>

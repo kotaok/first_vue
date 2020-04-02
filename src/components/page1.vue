@@ -1,11 +1,28 @@
 <template>
   <div class="block">
-    <h1 class="title">Top</h1>
-    <p>ポートフォリオサイト</p>
+    <h1 class="title">TOP</h1>
+    <topabout></topabout>
+    <div>
+      <router-link to="/page2" class="jump">ABOUT<i class="el-icon-right"></i></router-link>
+    </div>
+    <router-view></router-view>
+    <topworks></topworks>
+    <div>
+      <router-link to="/page3" class="jump">WORKS<i class="el-icon-right"></i></router-link>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import topabout from './top_about'
+import topworks from './top_works'
+export default {
+  components: {
+    topabout,
+    topworks
+  }
+}
 </script>
 
 <style>
@@ -20,6 +37,13 @@
   margin-top: 20px;
   margin-bottom: 50px;
   border: solid 2px #000000;
+}
+
+.index-text {
+  width: 30%;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: solid 4px rgba(36, 36, 224, 0.781);
 }
 
 

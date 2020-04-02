@@ -1,26 +1,29 @@
 <template>
   <div class="block">
-    <h1 class="title">About</h1>
+    <h1 class="title">ABOUT</h1>
     <myprofile></myprofile>
     <div class="about-block">
       <p><font-awesome-icon :icon="['fas','code']" size="2x"/></p>
       <p class="text">言語・フレームワーク、ツールなど</p>
       <myskills></myskills>
-      <div id="nav">
-      <router-link to="/page3" class="jump">作品をみる</router-link>
+      <div>
+      <router-link to="/page3" class="jump">作品をみる<i class="el-icon-right"></i></router-link>
       </div>
     <router-view></router-view>
     </div>
+    <myhistory></myhistory>
   </div>
 </template>
 
 <script>
 import myskills from './skills'
 import myprofile from './myprofile'
+import myhistory from './history'
 export default {
   components : {
     myskills,
-    myprofile
+    myprofile,
+    myhistory
   }
 }
 </script>
@@ -46,30 +49,33 @@ export default {
 .about-block {
   width: 70%;
   margin: auto;
+  margin-bottom: 40px;
   background-color: #F8F9FA;
-  border: solid 1px #f5f5f5;
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.1));
+  border: solid 2px #ececec;
 }
 
 .text {
-  font-size: 21px;
+  font-size: 20px;
+  margin: 50px 0px;
+  color: #3F3F3F;
 }
 
 .jump {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
+  width: 30%;
+  margin: auto;
   padding: 20px 60px;
-  margin: 20px 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: solid 1px #3f3f3f;
+  color: #ffffff;
+  background-color: #2B2D30;
   transition: all 300ms ease;
 }
 
 .jump:hover {
-  background-color: #3f3f3f;
-  border: solid 1px #ffffff;
-  color: #ffffff;
+  opacity: 0.7;
 }
 </style>

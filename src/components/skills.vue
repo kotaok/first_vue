@@ -2,7 +2,6 @@
   <div class="skill-block">
     <transition-group tag="div" class="list" appear>
       <div class="skill" stagger="70" v-for="skill of skills" v-bind:key="skill.name">
-        <!-- <el-progress type="circle" :percentage="skill.percent" :color="color" :size="10"></el-progress> -->
         <p>{{ skill.name }}</p>
       </div>
     </transition-group>
@@ -44,13 +43,15 @@ export default {
 }
 
 .skill {
-  margin: 10px;
+  margin: 3px;
 }
 
 .skill p {
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px 15px;
-  border: solid 1px #22223f;
+  border-radius: 2px;
+  border: solid 1px #b4b4b4;
+  margin: 3px 0px;
 }
 
 .skill-block {

@@ -2,9 +2,9 @@
   <div>
     <myheader></myheader>
     <div id="nav">
-      <router-link to="/" class="navmenu">Top</router-link>
-      <router-link to="/page2" class="navmenu">About</router-link>
-      <router-link to="/page3" class="navmenu">Works</router-link>
+      <router-link to="/" class="navmenu">TOP</router-link>
+      <router-link to="/page2" class="navmenu">ABOUT</router-link>
+      <router-link to="/page3" class="navmenu">WORKS</router-link>
     </div>
     <transition mode="out-in">
       <router-view></router-view>
@@ -55,7 +55,7 @@ export default {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .navmenu {

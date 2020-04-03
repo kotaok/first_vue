@@ -19,7 +19,5 @@
 }
 
 .header div p {
-  font-size: 70px;
-  margin-left: 50px;
 }
 </style>

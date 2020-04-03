@@ -6,7 +6,10 @@
           dialogVisible = true,
           dialogname = item.name,
           dialogtext = item.text,
-          dialoglang = item.lang"
+          dialoglang = item.lang,
+          dialogpath = item.path,
+          dialoggithub = item.github,
+          dialogurl = item.link"
           >
         <img 
           :src="item.path" 
@@ -21,10 +24,24 @@
     <el-dialog
       :title="dialogname"
       :visible.sync="dialogVisible"
+      :fullscreen="true"
       width="30%"
       :before-close="handleClose">
+      <div>
+        <img :src="dialogpath" :alt="dialogname" class="dialog-image" width="40%" height="30%">
+      </div>
       <span class="dialogtext">{{ dialogtext }}</span>
       <p>{{ dialoglang }}</p>
+
+      <div v-if="dialogurl != null" class="dialog-icon">
+        <a :href="dialogurl" target="_blank"><el-button type="primary" icon="el-icon-share">サイトに移動</el-button></a>
+      </div>
+
+      <div v-if="dialoggithub != null" class="dialog-icon">
+        <a :href="dialoggithub" target="_blank"><el-button type="success" icon="el-icon-share">Github</el-button></a>
+      </div>
+
+      <el-button @click="dialogVisible = false"><i class="el-icon-close"></i>閉じる</el-button>
     </el-dialog>
   </div>
   </div>
@@ -35,11 +52,11 @@ export default {
   data: function() {
     return {
       items: [
-        { name: 'slackbot',path: '/img/slackbot.png',text:'Pythonを使って開発した翻訳Bot。', lang: "主な使用言語/フレームワークなど: Python、Slack API"},
-        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ。', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript"},
-        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ。', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase"},
-        { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ。', lang: "主な使用言語/フレームワークなど:PHP"},
-        { name: 'portfolio_ver2',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ。', lang: "主な使用言語/フレームワークなど:Vue.js"}
+        { name: 'slackbot',path: '/img/slackbot.png',text:'Pythonを使って開発した翻訳Bot。', lang: "主な使用言語/フレームワークなど: Python、Slack API", github: null, link: null},
+        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ。', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript", github: "https://github.com/kotaok/myportfolio", link: null},
+        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ。', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase", github: "https://github.com/kotaok/storm-webrain", link: "https://storm-webrain.herokuapp.com/"},
+        { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ。', lang: "主な使用言語/フレームワークなど:PHP", github: null, link: "http://n-kashiwa.main.jp/"},
+        { name: 'portfolio_ver2',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ。', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
       ],
       dialogVisible: false,
       dialogname: "test",
@@ -99,6 +116,11 @@ export default {
   color: #000;
 }
 
+.dialog-icon {
+  margin: 30px 10px;
+}
+
+
 @media screen and (max-width: 600px) {
   .item {
     width: 75%;
@@ -110,6 +132,11 @@ export default {
     margin: 0px;
     padding: 10px;
     background-color: #F3F3F3;
+  }
+
+  .dialog-image {
+    width: 100%;
+    height: 100%;
   }
 }
 

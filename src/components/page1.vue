@@ -31,6 +31,7 @@ export default {
 }
 
 .title {
+  font-size: 20px;
   width: 25%;
   padding: 10px;
   margin: auto;

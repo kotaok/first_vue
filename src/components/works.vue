@@ -80,6 +80,11 @@ export default {
   transition: all 200ms ease;
 }
 
+.item h4, .item p {
+  margin: 0px;
+  padding: 10px;
+}
+
 .item:hover {
   box-shadow: 0 0 2px rgba(0,0,0,0.2);
   opacity: 0.5;
@@ -94,5 +99,18 @@ export default {
   color: #000;
 }
 
+@media screen and (max-width: 600px) {
+  .item {
+    width: 75%;
+    height: 100%;
+    margin: 30px 10px;
+  }
+
+  .item h4, .item p {
+    margin: 0px;
+    padding: 10px;
+    background-color: #F3F3F3;
+  }
+}
 
 </style>

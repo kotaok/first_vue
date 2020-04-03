@@ -43,7 +43,7 @@ export default {
   width: 30%;
   text-align: left;
   padding-bottom: 10px;
-  border-bottom: solid 4px rgba(36, 36, 224, 0.781);
+  border-bottom: solid 2px rgb(17, 17, 104);
 }
 
 

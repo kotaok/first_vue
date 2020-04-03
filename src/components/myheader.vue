@@ -14,6 +14,8 @@
   display: flex;
   justify-content: center;
   padding: 15%;
+  background-image: url("/img/keyimage.png");
+  background-size: cover;
 }
 
 .header div p {

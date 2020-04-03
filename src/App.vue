@@ -40,6 +40,12 @@ export default {
 
 
 <style>
+
+html,body {
+font-family:"ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana
+,"ＭＳ Ｐゴシック",sans-serif;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

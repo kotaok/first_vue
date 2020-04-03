@@ -27,21 +27,23 @@
       :fullscreen="true"
       width="30%"
       :before-close="handleClose">
-      <div>
-        <img :src="dialogpath" :alt="dialogname" class="dialog-image" width="40%" height="30%">
-      </div>
-      <span class="dialogtext">{{ dialogtext }}</span>
-      <p>{{ dialoglang }}</p>
+      <div class="dialog-box">
+        <div>
+          <img :src="dialogpath" :alt="dialogname" class="dialog-image" width="40%" height="30%">
+        </div>
+        <span class="dialogtext">{{ dialogtext }}</span>
+        <p>{{ dialoglang }}</p>
 
-      <div v-if="dialogurl != null" class="dialog-icon">
-        <a :href="dialogurl" target="_blank"><el-button type="primary" icon="el-icon-share">サイトに移動</el-button></a>
-      </div>
+        <div v-if="dialogurl != null" class="dialog-icon">
+          <a :href="dialogurl" target="_blank"><el-button type="primary" icon="el-icon-share">サイトに移動</el-button></a>
+        </div>
 
-      <div v-if="dialoggithub != null" class="dialog-icon">
-        <a :href="dialoggithub" target="_blank"><el-button type="success" icon="el-icon-share">Github</el-button></a>
-      </div>
+        <div v-if="dialoggithub != null" class="dialog-icon">
+          <a :href="dialoggithub" target="_blank"><el-button type="success" icon="el-icon-share">Github</el-button></a>
+        </div>
 
-      <el-button @click="dialogVisible = false"><i class="el-icon-close"></i>閉じる</el-button>
+        <el-button @click="dialogVisible = false"><i class="el-icon-close"></i>閉じる</el-button>
+      </div>
     </el-dialog>
   </div>
   </div>
@@ -52,11 +54,11 @@ export default {
   data: function() {
     return {
       items: [
-        { name: 'slackbot',path: '/img/slackbot.png',text:'Pythonを使って開発した翻訳Bot。', lang: "主な使用言語/フレームワークなど: Python、Slack API", github: null, link: null},
-        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ。', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript", github: "https://github.com/kotaok/myportfolio", link: null},
-        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ。', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase", github: "https://github.com/kotaok/storm-webrain", link: "https://storm-webrain.herokuapp.com/"},
-        { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ。', lang: "主な使用言語/フレームワークなど:PHP", github: null, link: "http://n-kashiwa.main.jp/"},
-        { name: 'portfolio_ver2',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ。', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
+        { name: 'slackbot',path: '/img/slackbot.png',text:'Pythonで開発した翻訳Bot', lang: "主な使用言語/フレームワークなど: Python、Slack API", github: null, link: null},
+        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript", github: "https://github.com/kotaok/myportfolio", link: null},
+        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase", github: "https://github.com/kotaok/storm-webrain", link: "https://storm-webrain.herokuapp.com/"},
+        { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ', lang: "主な使用言語/フレームワークなど:PHP", github: null, link: "http://n-kashiwa.main.jp/"},
+        { name: 'portfolio_ver2',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
       ],
       dialogVisible: false,
       dialogname: "test",
@@ -102,6 +104,15 @@ export default {
   padding: 10px;
 }
 
+.item h4 {
+  font-size: 20px;
+}
+
+.item p {
+  font-size: 15px;
+  color: #797C80;
+}
+
 .item:hover {
   box-shadow: 0 0 2px rgba(0,0,0,0.2);
   opacity: 0.5;
@@ -120,6 +131,13 @@ export default {
   margin: 30px 10px;
 }
 
+.dialog-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 8px;
+  border: solid 1px #E0E1E5;
+}
+
 
 @media screen and (max-width: 600px) {
   .item {
@@ -131,12 +149,25 @@ export default {
   .item h4, .item p {
     margin: 0px;
     padding: 10px;
-    background-color: #F3F3F3;
+    text-align: left;
+  }
+
+  .item h4 {
+    font-size: 22px;
+  }
+
+  .item p {
+    font-size: 15px;
+    color: #797C80;
   }
 
   .dialog-image {
     width: 100%;
     height: 100%;
+  }
+
+  .dialog-box {
+    padding: 20px 20px 50px 20px;
   }
 }
 

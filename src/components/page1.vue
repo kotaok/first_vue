@@ -11,16 +11,19 @@
       <router-link to="/page3" class="jump">WORKS<i class="el-icon-right"></i></router-link>
     </div>
     <router-view></router-view>
+    <topblog></topblog>
   </div>
 </template>
 
 <script>
 import topabout from './top_about'
 import topworks from './top_works'
+import topblog from './top_blog'
 export default {
   components: {
     topabout,
-    topworks
+    topworks,
+    topblog
   }
 }
 </script>
@@ -45,6 +48,12 @@ export default {
   text-align: left;
   padding-bottom: 10px;
   border-bottom: solid 2px rgb(17, 17, 104);
+}
+
+@media screen and (max-width: 600px) {
+  .index-text {
+  width: 50%;
+}
 }
 
 

@@ -54,11 +54,11 @@ export default {
   data: function() {
     return {
       items: [
-        { name: 'slackbot',path: '/img/slackbot.png',text:'Pythonで開発した翻訳Bot', lang: "主な使用言語/フレームワークなど: Python、Slack API", github: null, link: null},
-        { name: 'portfolio_ver1',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript", github: "https://github.com/kotaok/myportfolio", link: null},
-        { name: 'webrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase", github: "https://github.com/kotaok/storm-webrain", link: "https://storm-webrain.herokuapp.com/"},
-        { name: 'kashiwa',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ', lang: "主な使用言語/フレームワークなど:PHP", github: null, link: "http://n-kashiwa.main.jp/"},
-        { name: 'portfolio_ver2',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
+        { name: 'Slackbot',path: '/img/slackbot.png',text:'Pythonで開発した翻訳Bot', lang: "主な使用言語/フレームワークなど: Python、Slack API", github: null, link: null},
+        { name: 'ポートフォリオ',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript", github: "https://github.com/kotaok/myportfolio", link: null},
+        { name: 'WeBrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase", github: "https://github.com/kotaok/storm-webrain", link: "https://storm-webrain.herokuapp.com/"},
+        { name: '柏キャンパスホームページ',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ', lang: "主な使用言語/フレームワークなど:PHP", github: null, link: "http://n-kashiwa.main.jp/"},
+        { name: 'ポートフォリオ(New)',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
       ],
       dialogVisible: false,
       dialogname: "test",
@@ -153,7 +153,7 @@ export default {
   }
 
   .item h4 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .item p {

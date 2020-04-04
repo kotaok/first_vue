@@ -21,6 +21,8 @@
 
 #profile p {
   color: #333333;
-  font-size: 21px;
+  font-size: 17px;
+  width: 80%;
+  margin: auto;
 }
 </style>

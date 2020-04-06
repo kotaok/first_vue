@@ -64,7 +64,7 @@ export default {
 
 .top_about_icon div {
   width: 30%;
-  margin: 20px;
+  margin: 70px 20px;
 }
 
 .top_about_icon div i {
@@ -86,6 +86,7 @@ export default {
 
   .top_about_icon div {
     width: 100%;
+    margin: 20px;
   }
 
   .top_about_icon div p {

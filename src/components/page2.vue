@@ -2,6 +2,7 @@
   <div class="block">
     <h1 class="title">ABOUT</h1>
     <myprofile></myprofile>
+    <mainskill></mainskill>
     <div class="about-block">
       <p><font-awesome-icon :icon="['fas','code']" size="2x"/></p>
       <p class="text">言語・フレームワーク、ツールなど</p>
@@ -19,11 +20,13 @@
 import myskills from './skills'
 import myprofile from './myprofile'
 import myhistory from './history'
+import mainskill from './mainskill'
 export default {
   components : {
     myskills,
     myprofile,
-    myhistory
+    myhistory,
+    mainskill
   }
 }
 </script>

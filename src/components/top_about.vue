@@ -59,6 +59,7 @@ export default {
 .top_about_icon {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .top_about_icon div {
@@ -78,9 +79,20 @@ export default {
   }
 
   .top_about_block div {
-  width: 100%;
-  padding: 10px 20px;
-  margin: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px;
   }
+
+  .top_about_icon div {
+    width: 100%;
+  }
+
+  .top_about_icon div p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
 }
 </style>

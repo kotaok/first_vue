@@ -13,13 +13,13 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: 'HTML&CSS', percent: 60},
-        { name: 'JavaScript', percent: 30},
-        { name: 'C++', percent: 30},
-        { name: 'Python', percent: 20},
-        { name: 'Node.js/Express', percent: 40},
-        { name: 'Vue.js', percent: 20},
-        { name: 'Firebase', percent: 50},
+        { name: 'HTML&CSS'},
+        { name: 'JavaScript'},
+        { name: 'C++'},
+        { name: 'Python'},
+        { name: 'Node.js/Express'},
+        { name: 'Vue.js'},
+        { name: 'Firebase'},
         { name: 'heroku'},
         { name: 'VSCode'},
         { name: 'VirtualBox'},

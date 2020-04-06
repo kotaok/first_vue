@@ -1,6 +1,9 @@
 <template>
   <div>
-    <p class="text" id="my-skill-top">DEVELOP</p>
+    <div id="my-skill-top">
+      <h2>DEVELOP</h2>
+      <p>開発について</p>
+    </div>
     <div class="main-skill">
       <div>
         <i class="el-icon-monitor"></i>
@@ -27,9 +30,9 @@ export default {
   font-size: 55px;
 }
 
-.main-skill div h1{
-  margin: 10px 0px;
-  font-size: 20px;
+.main-skill div h1 {
+  margin: 20px 0px;
+  font-size: 22px;
 }
 
 .main-skill div {
@@ -39,24 +42,38 @@ export default {
 .main-skill div p {
   width: 40%;
   margin: auto;
+  font-size: 18px;
 }
 
 #my-skill-top {
-  font-size: 45px;
-  padding: 110px 0px;
+  padding: 50px 0px;
   background-color: rgb(0, 0, 97);
-  color: azure;
+}
+
+#my-skill-top h2 {
+  font-size: 45px;
+  margin: 10px 0px;
+  color: #ffffff;
+}
+
+#my-skill-top p {
+  font-size: 20px;
+  color: #c1c1c1
 }
 
 @media screen and (max-width: 600px) {
   #my-skill-top {
-    font-size: 30px;
-    padding: 40px 0px;
+    padding: 30px 0px;
   }
 
   .main-skill div p {
     width: 75%;
     margin: auto;
+  }
+
+  #my-skill-top h2 {
+    font-size: 30px;
+    margin: 20px 0px;
   }
 }
 </style>

@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div id="my-skill-top">
+    <div class="banner">
       <h2>DEVELOP</h2>
       <p>開発について</p>
+      <i class="el-icon-arrow-down"></i>
     </div>
     <div class="main-skill">
       <div>
@@ -45,24 +46,29 @@ export default {
   font-size: 18px;
 }
 
-#my-skill-top {
+.banner {
   padding: 50px 0px;
   background-color: rgb(0, 0, 97);
 }
 
-#my-skill-top h2 {
+.banner h2 {
   font-size: 45px;
   margin: 10px 0px;
   color: #ffffff;
 }
 
-#my-skill-top p {
+.banner p {
   font-size: 20px;
   color: #c1c1c1
 }
 
+.banner i {
+  font-size: 27px;
+  color: #c1c1c1;
+}
+
 @media screen and (max-width: 600px) {
-  #my-skill-top {
+  .banner {
     padding: 30px 0px;
   }
 
@@ -71,7 +77,7 @@ export default {
     margin: auto;
   }
 
-  #my-skill-top h2 {
+  .banner h2 {
     font-size: 30px;
     margin: 20px 0px;
   }

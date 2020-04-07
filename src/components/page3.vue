@@ -1,7 +1,11 @@
 <template>
   <div class="block">
     <h1 class="title">WORKS</h1>
-    <p>これまでに製作した作品</p>
+    <div class="banner">
+      <h2>WORKS</h2>
+      <p>これまでに製作した作品</p>
+      <i class="el-icon-arrow-down"></i>
+    </div>
     <myworks></myworks>
   </div>
 </template>

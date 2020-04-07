@@ -7,6 +7,7 @@
           <p>ものづくりが好きで、1年前からプログラミングを学び始めた高校生です。webのフロントエンドを中心に、競技プログラミングにも取り組んでいます。</p>
         </div>
       </div>
+    <el-divider></el-divider>
     <div class="top_about_icon">
       <div>
         <i class="el-icon-monitor"></i>

@@ -50,7 +50,7 @@ export default {
 }
 
 .about-block {
-  width: 70%;
+  width: 60%;
   margin: auto;
   margin-bottom: 40px;
   background-color: #F8F9FA;

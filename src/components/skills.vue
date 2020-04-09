@@ -2,7 +2,16 @@
   <div class="skill-block">
     <transition-group tag="div" class="list" appear>
       <div class="skill" stagger="70" v-for="skill of skills" v-bind:key="skill.name">
-        <p>{{ skill.name }}</p>
+        <p>{{ skill.name }}
+          <el-rate
+          v-if="skill.value!=null"
+          v-model="skill.value"
+          disabled
+          show-score
+          text-color="#ff9900">
+          </el-rate>
+        </p>
+        <p class="summary">test</p>
       </div>
     </transition-group>
   </div>
@@ -13,19 +22,19 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: 'HTML&CSS'},
-        { name: 'JavaScript'},
-        { name: 'C++'},
-        { name: 'Python'},
-        { name: 'Node.js/Express'},
-        { name: 'Vue.js'},
-        { name: 'Firebase'},
-        { name: 'heroku'},
-        { name: 'VSCode'},
-        { name: 'VirtualBox'},
-        { name: 'vagrant'},
-        { name: 'Git'},
-        { name: 'GitHub'},
+        { name: 'HTML&CSS', value: 4},
+        { name: 'JavaScript', value: 4},
+        { name: 'C++', value: 4},
+        { name: 'Python', value: 4},
+        { name: 'Node.js/Express', value: 4},
+        { name: 'Vue.js', value: 4},
+        { name: 'Firebase', value: null},
+        { name: 'heroku', value: null},
+        { name: 'VSCode', value: null},
+        { name: 'VirtualBox', value: null},
+        { name: 'vagrant', value: null},
+        { name: 'Git', value: null},
+        { name: 'GitHub', value: null},
       ],
       color: "#1FA0FF"
     };
@@ -43,16 +52,20 @@ export default {
 }
 
 .skill {
-  width: 60%;
-  margin: 8px 0px;
+  width: 70%;
+  margin: 10px 0px;
 }
 
 .skill p {
   text-align: left;
   font-size: 18px;
-  padding: 10px 35px;
+  padding: 5px 35px;
   border-radius: 2px;
   margin: 3px 0px;
+}
+
+.summary {
+  color: #727272;
 }
 
 .skill-block {

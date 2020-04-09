@@ -54,7 +54,7 @@ export default {
 }
 
 .top_about_profile p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .top_about_icon {

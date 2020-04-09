@@ -7,8 +7,11 @@
     <el-timeline-item
       v-for="(activity, index) in activities"
       :key="index"
-      :timestamp="activity.timestamp">
-      <p>{{activity.content}}</p>
+      >
+      <el-card>
+        <p class="activity-text">{{activity.content}}</p>
+        <p>{{activity.timestamp}}</p>
+      </el-card>
     </el-timeline-item>
   </el-timeline>
   </div>
@@ -53,4 +56,9 @@ export default {
 .el-timeline-item {
   padding-bottom: 35px;
 }
+
+.activity-text {
+  font-size: 18px;
+}
+
 </style>

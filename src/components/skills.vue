@@ -43,14 +43,15 @@ export default {
 }
 
 .skill {
-  margin: 3px;
+  width: 60%;
+  margin: 8px 0px;
 }
 
 .skill p {
+  text-align: left;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 10px 35px;
   border-radius: 2px;
-  border: solid 1px #b4b4b4;
   margin: 3px 0px;
 }
 

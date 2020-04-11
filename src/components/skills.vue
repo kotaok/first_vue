@@ -1,7 +1,7 @@
 <template>
   <div class="skill-block">
     <transition-group tag="div" class="list" appear>
-      <div class="skill" stagger="70" v-for="skill of skills" v-bind:key="skill.name">
+      <div class="skill" v-for="skill of skills" v-bind:key="skill.name">
         <p>{{ skill.name }}
           <el-rate
           v-if="skill.value!=null"
@@ -11,7 +11,7 @@
           text-color="#ff9900">
           </el-rate>
         </p>
-        <p class="summary">test</p>
+        <p class="summary" v-if="skill.summary!=null">{{skill.summary}}</p>
       </div>
     </transition-group>
   </div>
@@ -22,19 +22,18 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: 'HTML&CSS', value: 4},
-        { name: 'JavaScript', value: 4},
-        { name: 'C++', value: 4},
-        { name: 'Python', value: 4},
-        { name: 'Node.js/Express', value: 4},
-        { name: 'Vue.js', value: 4},
-        { name: 'Firebase', value: null},
-        { name: 'heroku', value: null},
-        { name: 'VSCode', value: null},
-        { name: 'VirtualBox', value: null},
-        { name: 'vagrant', value: null},
-        { name: 'Git', value: null},
-        { name: 'GitHub', value: null},
+        { name: 'HTML&CSS', value: 4, summary: 'このサイトのような、ある程度のレイアウトであれば実装可。'},
+        { name: 'JavaScript', value: 2.5, summary: '基礎的な知識は理解。'},
+        { name: 'C++', value: 2, summary: '競プロで使用。基本的なSTLは理解。'},
+        { name: 'Python', value: 2, summary: '基本文法は理解。SlackBotの開発経験あり。'},
+        { name: 'Node.js/Express', value: 2.5, summary: 'チャットwebアプリケーションの開発経験あり。'},
+        { name: 'Vue.js', value: 3, summary: 'フレームワークを使用した開発、シンプルなSPAの実装経験あり。'},
+        { name: 'Git', value: null, summary: '開発に困らない程度は理解。'},
+        { name: 'Firebase', value: null, summary: 'Firebase Auth、Realtime databaseの使用経験あり。'},
+        { name: 'heroku', value: null, summary: ''},
+        { name: 'VSCode', value: null, summary: null},
+        { name: 'VirtualBox', value: null, summary: null},
+        { name: 'vagrant', value: null, summary: null}
       ],
       color: "#1FA0FF"
     };
@@ -72,4 +71,17 @@ export default {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  .skill {
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: solid 1px #efefef;
+  }
+
+  .skill p {
+    padding: 5px 0px;
+  }
+}
+
 </style>

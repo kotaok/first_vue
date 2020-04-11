@@ -81,4 +81,11 @@ export default {
 .jump:hover {
   opacity: 0.7;
 }
+
+@media screen and (max-width: 600px) {
+  .about-block {
+  width: 95%;
+  }
+}
+
 </style>

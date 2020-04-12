@@ -52,6 +52,7 @@ export default {
 .about-block {
   width: 60%;
   margin: auto;
+  margin-top: 110px;
   margin-bottom: 40px;
   background-color: #F8F9FA;
   border: solid 2px #ececec;

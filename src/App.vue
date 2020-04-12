@@ -41,6 +41,8 @@ export default {
 
 <style>
 
+@import url("https://use.typekit.net/eka7tiw.css");
+
 html,body {
 font-family:"ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana
 ,"ＭＳ Ｐゴシック",sans-serif;

@@ -52,6 +52,9 @@ export default {
 }
 
 .banner h2 {
+  font-family: objektiv-mk1,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 45px;
   margin: 10px 0px;
   color: #ffffff;

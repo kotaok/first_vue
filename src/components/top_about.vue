@@ -37,6 +37,8 @@ export default {
 
 .top_about_block {
   display: flex;
+  border-radius: 1px;
+  border: solid 9px #9e9e9e0f;
 }
 
 .top_about_block div {
@@ -55,6 +57,7 @@ export default {
 
 .top_about_profile p {
   font-size: 18px;
+  letter-spacing: 0.03em;
 }
 
 .top_about_icon {
@@ -71,6 +74,11 @@ export default {
 .top_about_icon div i {
   font-size: 55px;
   margin: 20px 0px;
+}
+
+.top_about_icon div p {
+  font-size: 18px;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (max-width: 600px) {

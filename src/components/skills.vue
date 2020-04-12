@@ -2,7 +2,7 @@
   <div class="skill-block">
     <transition-group tag="div" class="list" appear>
       <div class="skill" v-for="skill of skills" v-bind:key="skill.name">
-        <p>{{ skill.name }}
+        <p class="skill-title">{{ skill.name }}
           <el-rate
           v-if="skill.value!=null"
           v-model="skill.value"
@@ -27,7 +27,7 @@ export default {
         { name: 'C++', value: 2, summary: '競プロで使用。基本的なSTLは理解。'},
         { name: 'Python', value: 2, summary: '基本文法は理解。SlackBotの開発経験あり。'},
         { name: 'Node.js/Express', value: 2.5, summary: 'チャットwebアプリケーションの開発経験あり。'},
-        { name: 'Vue.js', value: 3, summary: 'フレームワークを使用した開発、シンプルなSPAの実装経験あり。'},
+        { name: 'Vue.js', value: 3, summary: 'UIフレームワークを使用した開発、シンプルなSPAの実装経験あり。'},
         { name: 'Git', value: null, summary: '開発に困らない程度は理解。'},
         { name: 'Firebase', value: null, summary: 'Firebase Auth、Realtime databaseの使用経験あり。'},
         { name: 'heroku', value: null, summary: ''},
@@ -55,15 +55,23 @@ export default {
   margin: 10px 0px;
 }
 
-.skill p {
+.skill-title {
+  font-family: objektiv-mk1,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: left;
-  font-size: 18px;
+  font-size: 19px;
   padding: 5px 35px;
   border-radius: 2px;
   margin: 3px 0px;
+  letter-spacing: 0.05em;
 }
 
 .summary {
+  text-align: left;
+  font-size: 18px;
+  padding: 5px 35px;
+  margin: 3px 0px;
   color: #727272;
 }
 
@@ -79,7 +87,7 @@ export default {
     border-bottom: solid 1px #efefef;
   }
 
-  .skill p {
+  .skill-title {
     padding: 5px 0px;
   }
 }

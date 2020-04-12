@@ -9,6 +9,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import './plugins/element.js'
+import VueObserveVisibility from 'vue-observe-visibility'
+Vue.use(VueObserveVisibility)
 
 library.add(fas,fab,far)
 

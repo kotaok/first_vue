@@ -56,7 +56,7 @@ export default {
 }
 
 .top_about_profile p {
-  font-size: 18px;
+  font-size: 21px;
   letter-spacing: 0.03em;
 }
 
@@ -103,6 +103,12 @@ export default {
     font-weight: bold;
   }
 
+  .top_block {
+    width: 80%;
+  }
 
+  .top_about_profile p {
+    font-size: 18px;
+  }
 }
 </style>

@@ -67,6 +67,9 @@ font-family:"ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana
 }
 
 .navmenu {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-weight: bold;
   padding: 15px 25px;
   margin: 0px 5px;

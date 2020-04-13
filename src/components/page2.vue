@@ -8,7 +8,7 @@
       <p class="text">言語・フレームワーク、ツールなど</p>
       <myskills></myskills>
       <div>
-      <router-link to="/page3" class="jump">作品をみる<i class="el-icon-right"></i></router-link>
+      <router-link to="/page3" class="jump">WORKS<i class="el-icon-right"></i></router-link>
       </div>
     <router-view></router-view>
     </div>
@@ -65,27 +65,44 @@ export default {
 }
 
 .jump {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   display: flex;
   justify-content: center;
   font-weight: bold;
-  width: 30%;
+  font-size: 18px;
+  width: 24%;
   margin: auto;
-  padding: 20px 60px;
+  padding: 20px 0px;
   margin-top: 60px;
   margin-bottom: 60px;
+  border-radius: 50px;
   text-decoration: none;
+  letter-spacing: 0.07em;
   color: #ffffff;
-  background-color: #2B2D30;
-  transition: all 300ms ease;
+  background-color: #212121;
+  transition: all 200ms ease;
 }
 
 .jump:hover {
   opacity: 0.7;
+  letter-spacing: 0.2em;
 }
 
 @media screen and (max-width: 600px) {
   .about-block {
   width: 95%;
+  }
+
+  .jump {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 16px 10px;
+    letter-spacing: 0.07em;
   }
 }
 

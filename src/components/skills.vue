@@ -53,7 +53,7 @@ export default {
 
 .skill {
   width: 70%;
-  margin: 10px 0px;
+  margin: 18px 0px;
 }
 
 .skill-title {

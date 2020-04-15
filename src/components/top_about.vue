@@ -9,13 +9,18 @@
       </div>
     <el-divider></el-divider>
     <div class="top_about_icon">
-      <div>
-        <i class="el-icon-monitor"></i>
+      <p class="caption">好きなこと</p>
+      <div class="icon_parent">
         <p>フロントエンド開発</p>
+        <div class="icon_block">
+          <i class="el-icon-monitor"></i>
+        </div>
       </div>
-      <div>
-        <i class="el-icon-setting"></i>
+      <div class="icon_parent">
         <p>webアプリケーション開発</p>
+        <div class="icon_block">
+          <i class="el-icon-setting"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -57,7 +62,8 @@ export default {
 
 .top_about_profile p {
   font-size: 21px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
 }
 
 .top_about_icon {
@@ -66,25 +72,41 @@ export default {
   flex-wrap: wrap;
 }
 
-.top_about_icon div {
+.icon_parent {
   width: 30%;
   margin: 70px 20px;
 }
 
 .top_about_icon div i {
-  font-size: 55px;
+  font-size: 60px;
   margin: 20px 0px;
+  color: #375d8a;
 }
 
 .top_about_icon div p {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.02em;
+  color: #1373E6;
+}
+
+.icon_block {
+  margin: auto;
+  padding: 30px 0px;
+  border: solid 1px #1373E6;
+  border-radius: 5px;
+}
+
+.caption {
+  font-size: 30px;
+  width: 100%;
+  margin: 80px 0px 0px 0px;
 }
 
 @media screen and (max-width: 600px) {
 
   .top_about_profile {
     width: 80%;
+    margin: 10px 0px;
   }
 
   .top_about_block div {
@@ -93,7 +115,7 @@ export default {
     margin: 10px;
   }
 
-  .top_about_icon div {
+  .icon_parent {
     width: 100%;
     margin: 20px;
   }

@@ -34,10 +34,10 @@
         <span class="dialogtext">{{ dialogtext }}</span>
         <p>{{ dialoglang }}</p>
         <div v-if="dialogurl != null" class="dialog-icon">
-          <a :href="dialogurl" target="_blank"><el-button type="primary" icon="el-icon-share">サイトに移動</el-button></a>
+          <a :href="dialogurl" target="_blank" class="jump">サイトへ移動</a>
         </div>
         <div v-if="dialoggithub != null" class="dialog-icon">
-          <a :href="dialoggithub" target="_blank"><el-button type="success" icon="el-icon-share">Github</el-button></a>
+          <a :href="dialoggithub" target="_blank" class="jump">GitHub</a>
         </div>
         <el-button @click="dialogVisible = false"><i class="el-icon-close"></i>閉じる</el-button>
       </div>

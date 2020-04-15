@@ -32,7 +32,7 @@ export default {
 </script>
 <style>
 .top_block {
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-top: 150px;
   margin-bottom: 50px;
@@ -43,13 +43,16 @@ export default {
 .top_about_block {
   display: flex;
   border-radius: 1px;
-  border: solid 9px #9e9e9e0f;
+  background-image: url(/img/backimg.jpg);
+  background-size: cover;
 }
 
 .top_about_block div {
-  width: 400px;
-  padding: 100px 50px;
-  margin: 40px;
+  width: 25%;
+  padding: 10%;
+  padding-left: 15%;
+  margin: 40px 0px;
+  background-color: #08009ad4;
 }
 
 .top_about_profile {
@@ -57,12 +60,15 @@ export default {
 }
 
 .top_about_profile h2, .top_about_profile p {
-  text-align: left;
+    font-size: 26px;
+    color: #e2e2e2;
+    text-align: left;
 }
 
 .top_about_profile p {
-  font-size: 21px;
-  letter-spacing: 0.04em;
+  color: #ffffffc7;
+  font-size: 17px;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
@@ -110,9 +116,9 @@ export default {
   }
 
   .top_about_block div {
-    width: 100%;
-    padding: 10px 20px;
-    margin: 10px;
+    width: 70%;
+    padding: 20px 20px;
+    margin: 5px;
   }
 
   .icon_parent {
@@ -130,7 +136,8 @@ export default {
   }
 
   .top_about_profile p {
-    font-size: 18px;
+    font-size: 16px;
+    color: #d8d8d8;
   }
 }
 </style>

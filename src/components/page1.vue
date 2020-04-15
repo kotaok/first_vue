@@ -47,6 +47,7 @@ export default {
   width: 30%;
   text-align: left;
   padding-bottom: 10px;
+  margin-left: 5%;
   border-bottom: solid 2px rgb(17, 17, 104);
 }
 

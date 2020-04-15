@@ -86,8 +86,8 @@ export default {
 }
 
 .jump:hover {
-  opacity: 0.7;
   letter-spacing: 0.2em;
+  background-color: #06006d;
 }
 
 @media screen and (max-width: 600px) {

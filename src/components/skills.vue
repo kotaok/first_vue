@@ -57,7 +57,7 @@ export default {
 }
 
 .skill-title {
-  font-family: objektiv-mk1,sans-serif;
+  font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: left;
@@ -73,7 +73,7 @@ export default {
   font-size: 18px;
   padding: 5px 35px;
   margin: 3px 0px;
-  color: #727272;
+  color: #4c4c4c;
 }
 
 .skill-block {

@@ -97,7 +97,7 @@ export default {
 
 .icon_block {
   margin: auto;
-  padding: 30px 0px;
+  padding: 50px 0px;
   border: solid 1px #1373E6;
   border-radius: 5px;
 }

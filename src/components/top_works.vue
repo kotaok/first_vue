@@ -2,7 +2,7 @@
   <div class="top_block">
     <h2 class="index-text">WORKS</h2>
     <div class="block">
-      <el-carousel indicator-position="outside">
+      <el-carousel indicator-position="outside" :height="carousel_height">
         <el-carousel-item v-for="photo of gallery" :key="photo.path">
           <img :src="photo.path" class="works_img">
         </el-carousel-item>
@@ -19,14 +19,34 @@ export default {
         {path: '/img/webrain.png'},
         {path: '/img/kashiwa_2.png'},
         {path: '/img/portfolio_image.png'}
-      ]
+      ],
+      carousel_height: "500px"
     }
+  },
+  methods: {
+    handleResize: function() {
+      if(window.innerWidth <= 600) {
+        this.carousel_height = "270px"
+      }
+      else {
+        this.carousel_height = "500px"
+      }
+    }
+  },
+  created: function() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed: function() {
+    window.removeEventListener('resize', this.handleResize)
   }
 }
 </script>
 
 <style>
 .works_img {
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 </style>

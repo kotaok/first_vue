@@ -44,17 +44,22 @@ export default {
 }
 
 .index-text {
+  font-size: 45px;
+  font-family: bilo, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   width: 30%;
   text-align: left;
-  padding-bottom: 10px;
   margin-left: 5%;
-  border-bottom: solid 2px rgb(17, 17, 104);
 }
 
 @media screen and (max-width: 600px) {
   .index-text {
-  width: 50%;
-}
+    font-size: 40px;
+    width: 50%;
+    margin: 50px 0px;
+    margin-left: 5%;
+  }
 }
 
 

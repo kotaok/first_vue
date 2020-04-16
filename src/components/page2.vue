@@ -72,7 +72,7 @@ export default {
   justify-content: center;
   font-weight: bold;
   font-size: 18px;
-  width: 24%;
+  width: 300px;
   margin: auto;
   padding: 20px 0px;
   margin-top: 60px;

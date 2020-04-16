@@ -1,8 +1,11 @@
 <template>
 <div>
-  <div class="footer-link">
-    <a href="https://github.com/kotaok" target="_blank"><font-awesome-icon :icon="['fab','github']" size="2x" color="#ffffff"/></a>
-    <a href="https://qiita.com/lemon_melon" target="_blank"><font-awesome-icon :icon="['fas','search']" size="2x" color="#ffffff"/></a>
+  <div class="footer-link-parent">
+    <p class="footer-title">LINK</p>
+    <div class="footer-link">
+      <a href="https://github.com/kotaok" target="_blank"><font-awesome-icon :icon="['fab','github']" size="2x" color="#ffffff"/></a>
+      <a href="https://qiita.com/lemon_melon" target="_blank"><font-awesome-icon :icon="['fas','search']" size="2x" color="#ffffff"/></a>
+    </div>
   </div>
   <div id="footer">
     <p>©︎2020 kota</p>
@@ -14,9 +17,12 @@
 .footer-link {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  padding: 70px 0px;
+}
+
+.footer-link-parent {
   background-color: #030065;
+  padding: 70px 0px;
+  margin-top: 40px;
 }
 
 #footer {
@@ -42,8 +48,9 @@
   font-family: brandon-grotesque, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 20px;
+  font-size: 30px;
   color: #ffffff;
+  text-align: center;
 }
 
 .faicon {

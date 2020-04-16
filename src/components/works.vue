@@ -94,6 +94,7 @@ export default {
   margin: 30px 10px;
   border: solid 1px #eaeaea;
   transition: all 200ms ease;
+  overflow: hidden;
 }
 
 .item h4, .item p {
@@ -116,7 +117,14 @@ export default {
 }
 
 .item img {
+  display: block;
   object-fit: cover;
+  transition-duration: 0.3s;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
 }
 
 .dialogtext {

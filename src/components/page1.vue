@@ -44,7 +44,7 @@ export default {
 }
 
 .index-text {
-  font-size: 45px;
+  font-size: 65px;
   font-family: bilo, sans-serif;
   font-weight: 700;
   font-style: normal;

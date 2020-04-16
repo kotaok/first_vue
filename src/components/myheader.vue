@@ -31,4 +31,11 @@
   font-size: 50px;
   color: #dedede;
 }
+
+@media screen and (max-width: 600px) {
+  .header div p {
+    font-size: 40px;
+    color: #9296d0cf;
+  }
+}
 </style>

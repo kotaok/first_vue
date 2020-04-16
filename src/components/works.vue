@@ -92,7 +92,7 @@ export default {
   width: 35%;
   height: 350px;
   margin: 30px 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border: solid 1px #eaeaea;
   transition: all 200ms ease;
 }
 

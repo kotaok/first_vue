@@ -59,17 +59,18 @@ export default {
   background-color: #ffffff;
 }
 
-.top_about_profile h2, .top_about_profile p {
-    font-size: 26px;
-    color: #e2e2e2;
-    text-align: left;
+.top_about_profile h2 {
+  font-size: 26px;
+  color: #f5f5f5;
+  text-align: left;
 }
 
 .top_about_profile p {
-  color: #ffffffc7;
+  color: #f5f5f5;
   font-size: 17px;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .top_about_icon {
@@ -115,10 +116,17 @@ export default {
     margin: 10px 0px;
   }
 
+  .top_about_block {
+    background-image: none;
+  }
+
   .top_about_block div {
-    width: 70%;
+    width: 80%;
     padding: 20px 20px;
-    margin: 5px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 3px grey;
   }
 
   .icon_parent {
@@ -132,12 +140,18 @@ export default {
   }
 
   .top_block {
-    width: 80%;
+    width: 100%;
+  }
+
+  .top_about_profile h2 {
+    font-size: 26px;
+    color: #000000;
+    text-align: left;
   }
 
   .top_about_profile p {
     font-size: 16px;
-    color: #d8d8d8;
+    color: #000000;
   }
 }
 </style>

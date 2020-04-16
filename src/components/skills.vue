@@ -71,9 +71,9 @@ export default {
 .summary {
   text-align: left;
   font-size: 18px;
-  padding: 5px 35px;
+  padding: 5px;
   margin: 3px 0px;
-  color: #4c4c4c;
+  color: #444444;
 }
 
 .skill-block {

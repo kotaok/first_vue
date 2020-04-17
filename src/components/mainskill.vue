@@ -48,7 +48,7 @@ export default {
 
 .banner {
   padding: 50px 0px;
-  background-color: rgb(0, 0, 97);
+  background-color: #030065;
 }
 
 .banner h2 {

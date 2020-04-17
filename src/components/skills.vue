@@ -71,7 +71,7 @@ export default {
 .summary {
   text-align: left;
   font-size: 18px;
-  padding: 5px;
+  padding: 5px 35px;
   margin: 3px 0px;
   color: #444444;
 }

@@ -14,10 +14,10 @@
         <img 
           :src="item.path" 
           :alt="item.name" 
-          width="100%" height="200px"
+          width="100%" height="250px"
         >
-        <h4>{{ item.name }}</h4>
-        <p>{{ item.text }}</p>
+        <p class="item-title">{{ item.name }}</p>
+        <p class="item-summary">{{ item.text }}</p>
       </div>
     </transition-group>
     <div>
@@ -84,29 +84,30 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
 
 .item {
-  width: 35%;
-  height: 350px;
-  margin: 30px 10px;
+  width: 460px;
+  height: 360px;
+  margin: 30px;
   border: solid 1px #eaeaea;
   transition: all 200ms ease;
   overflow: hidden;
-}
-
-.item h4, .item p {
-  margin: 0px;
-  padding: 10px;
-}
-
-.item h4 {
-  font-size: 20px;
+  background-color: #ffffff;
 }
 
 .item p {
+  margin: 0px;
+  padding: 5px;
+}
+
+.item-title {
+  font-size: 20px;
+}
+
+.item-summary {
   font-size: 15px;
   color: #797C80;
 }

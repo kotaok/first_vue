@@ -33,6 +33,13 @@ export default {
     return {
     }
   },
+  watch: {
+    '$route' (newValue,oldValue) {
+      this.$nextTick(() => {
+        scrollTo(0,600)
+      })
+    }
+  }
 }
 
 </script>
@@ -60,6 +67,7 @@ font-family:"ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana
 #nav {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -81,7 +89,7 @@ font-family:"ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana
 }
 
 .navmenu:hover {
-  border-bottom: solid 2px #15d636;
+  border-bottom: solid 2px #030065;
   -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);

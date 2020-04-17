@@ -8,6 +8,7 @@
       v-for="(activity, index) in activities"
       :key="index"
       >
+      <el-avatar :src="activity.image" :size="150"></el-avatar>
       <el-card>
         <p class="activity-text">{{activity.content}}</p>
         <p>{{activity.timestamp}}</p>
@@ -25,22 +26,28 @@ export default {
       reverse: false,
       activities: [{
         content: 'プログラミングの学習を開始',
-        timestamp: '2019年6月'
+        timestamp: '2019年6月',
+        image: '/img/history_1.png'
       }, {
         content: 'ITパスポート合格',
-        timestamp: '2019年12月'
+        timestamp: '2019年12月',
+        image: '/img/history_2.png'
       }, {
         content: 'ポートフォリオの作成',
-        timestamp: '2019年12月'
+        timestamp: '2019年12月',
+        image: '/img/history_3.png'
       }, {
         content: 'チャットwebアプリの開発',
-        timestamp: '2020年1月'
+        timestamp: '2020年1月',
+        image: '/img/history_4.png'
       }, {
         content: 'キャンパスホームページの開発',
-        timestamp: '2020年3月'
+        timestamp: '2020年3月',
+        image: '/img/history_5.png'
       }, {
         content: 'ポートフォリオの再作成',
-        timestamp: '2020年4月'
+        timestamp: '2020年4月',
+        image: '/img/history_6.png'
       }]
     };
   }
@@ -59,6 +66,10 @@ export default {
 
 .activity-text {
   font-size: 18px;
+}
+
+.el-avatar--icon {
+  margin-bottom: 35px;
 }
 
 </style>

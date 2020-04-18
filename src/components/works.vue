@@ -16,8 +16,10 @@
           :alt="item.name" 
           width="100%" height="250px"
         >
-        <p class="item-title">{{ item.name }}</p>
-        <p class="item-summary">{{ item.text }}</p>
+        <el-card>
+          <p class="item-title">{{ item.name }}</p>
+          <p class="item-summary">{{ item.text }}</p>
+        </el-card>
       </div>
     </transition-group>
     <div>
@@ -75,6 +77,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
 .v-enter-active, .v-leave-active {
   transition: opacity 1s;
 }
@@ -92,11 +95,12 @@ export default {
 }
 
 .item {
-  width: 460px;
-  height: 360px;
+  width: 500px;
+  height: 375px;
   margin: 20px;
   transition: all 200ms ease;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .item p {
@@ -105,11 +109,16 @@ export default {
 }
 
 .item-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
   font-size: 17px;
   text-align: left;
+  
 }
 
 .item-summary {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
   font-size: 15px;
   color: #797C80;
   text-align: left;

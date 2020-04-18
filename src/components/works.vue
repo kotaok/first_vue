@@ -58,9 +58,12 @@ export default {
         { name: 'ポートフォリオ(New)',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
       ],
       dialogVisible: false,
-      dialogname: "test",
-      dialogtext: "test",
-      dialoglang: "test",
+      dialogname: null,
+      dialogtext: null,
+      dialoglang: null,
+      dialogpath: null,
+      dialoggithub: null,
+      dialogurl: null
     };
   },
   methods: {
@@ -91,11 +94,9 @@ export default {
 .item {
   width: 460px;
   height: 360px;
-  margin: 30px;
-  border: solid 1px #eaeaea;
+  margin: 20px;
   transition: all 200ms ease;
   overflow: hidden;
-  background-color: #ffffff;
 }
 
 .item p {
@@ -104,12 +105,14 @@ export default {
 }
 
 .item-title {
-  font-size: 20px;
+  font-size: 17px;
+  text-align: left;
 }
 
 .item-summary {
   font-size: 15px;
   color: #797C80;
+  text-align: left;
 }
 
 .item:hover {

@@ -50,7 +50,7 @@ export default {
   font-style: normal;
   width: 30%;
   text-align: left;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 @media screen and (max-width: 600px) {

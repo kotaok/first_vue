@@ -43,7 +43,7 @@ export default {
 .top_about_block {
   display: flex;
   border-radius: 1px;
-  background-image: url(/img/backimg.jpg);
+  background-image: url(/img/develop.jpg);
   background-size: cover;
 }
 

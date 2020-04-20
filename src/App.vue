@@ -49,10 +49,12 @@ export default {
 <style>
 
 @import url("https://use.typekit.net/eka7tiw.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
 
 html,body {
-font-family:"ヒラギノ角ゴ Pro W3",メイリオ,Osaka,Arial,Verdana
-,"ＭＳ Ｐゴシック",sans-serif;
+  font-family: 'Noto Sans JP',メイリオ,Osaka,Arial,Verdana
+  ,"ＭＳ Ｐゴシック",sans-serif;
+  font-weight: 400;
 }
 
 #app {

@@ -57,7 +57,7 @@ export default {
 }
 
 .skill-title {
-  font-family: acumin-pro, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: left;

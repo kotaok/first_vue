@@ -55,7 +55,7 @@ export default {
 
 @media screen and (max-width: 600px) {
   .index-text {
-    font-size: 40px;
+    font-size: 50px;
     width: 50%;
     margin: 50px 0px;
     margin-left: 5%;

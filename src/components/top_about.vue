@@ -116,16 +116,10 @@ export default {
     margin: 10px 0px;
   }
 
-  .top_about_block {
-    background-image: none;
-  }
-
   .top_about_block div {
     width: 80%;
-    padding: 20px 20px;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 8px;
+    padding: 30px 20px;
+    -webkit-box-shadow: 0 0 3px grey;
     box-shadow: 0 0 3px grey;
   }
 
@@ -145,13 +139,12 @@ export default {
 
   .top_about_profile h2 {
     font-size: 26px;
-    color: #000000;
     text-align: left;
   }
 
   .top_about_profile p {
     font-size: 16px;
-    color: #000000;
+    letter-spacing: 0.02em;
   }
 }
 </style>

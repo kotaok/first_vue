@@ -111,7 +111,7 @@ export default {
 .item-title {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 19px;
   text-align: left;
   
 }
@@ -159,7 +159,7 @@ export default {
 
 @media screen and (max-width: 600px) {
   .item {
-    width: 75%;
+    width: 90%;
     height: 100%;
     margin: 30px 10px;
   }
@@ -170,13 +170,12 @@ export default {
     text-align: left;
   }
 
-  .item h4 {
-    font-size: 18px;
+  .item-title {
+    font-size: 19px;
   }
 
-  .item p {
+  .item-summary {
     font-size: 15px;
-    color: #797C80;
   }
 
   .dialog-image {

@@ -92,15 +92,15 @@ export default {
 
 @media screen and (max-width: 600px) {
   .about-block {
-  width: 95%;
+    width: 95%;
   }
 
   .jump {
     font-size: 18px;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     padding: 16px 10px;
     letter-spacing: 0.07em;
   }

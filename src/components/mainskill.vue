@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="banner">
-      <h2>DEVELOP</h2>
       <p>開発について</p>
       <i class="el-icon-arrow-down"></i>
     </div>
@@ -46,23 +45,9 @@ export default {
   font-size: 18px;
 }
 
-.banner {
-  padding: 50px 0px;
-  background-color: #030065;
-}
-
-.banner h2 {
-  font-family: objektiv-mk1,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 45px;
-  margin: 10px 0px;
-  color: #ffffff;
-}
-
 .banner p {
   font-size: 20px;
-  color: #c1c1c1
+  color: #272727;
 }
 
 .banner i {
@@ -77,12 +62,8 @@ export default {
 
   .main-skill div p {
     width: 75%;
+    font-size: 16px;
     margin: auto;
-  }
-
-  .banner h2 {
-    font-size: 30px;
-    margin: 20px 0px;
   }
 }
 </style>

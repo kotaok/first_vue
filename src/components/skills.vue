@@ -58,7 +58,7 @@ export default {
 
 .skill-title {
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-align: left;
   font-size: 19px;
@@ -91,6 +91,12 @@ export default {
   .skill-title {
     padding: 5px 0px;
   }
+
+  .summary {
+    font-size: 16px;
+    padding: 5px 3px;
+  }
+
 }
 
 </style>

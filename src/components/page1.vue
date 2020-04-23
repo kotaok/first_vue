@@ -34,13 +34,12 @@ export default {
 }
 
 .title {
-  font-size: 20px;
-  width: 25%;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 40px;
   padding: 10px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 50px;
-  border: solid 2px #000000;
 }
 
 .index-text {

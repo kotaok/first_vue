@@ -22,13 +22,13 @@ export default {
   data: function() {
     return {
       skills: [
-        { name: 'HTML&CSS', value: 4, summary: 'このサイトのような、ある程度のレイアウトであれば実装可。'},
+        { name: 'HTML&CSS', value: 3.5, summary: 'このサイトのような、ある程度のレイアウトであれば実装可。'},
         { name: 'JavaScript', value: 2.5, summary: '基礎的な知識は理解。'},
         { name: 'C++', value: 2, summary: '競プロで使用。基本的なSTLは理解。'},
         { name: 'Python', value: 1.5, summary: '基本文法は理解。SlackBotの開発経験あり。'},
         { name: 'PHP', value: 1.5, summary: '基礎的な知識は理解。'},
         { name: 'Node.js/Express', value: 2.5, summary: 'チャットwebアプリケーションの開発経験あり。'},
-        { name: 'Vue.js', value: 3, summary: 'UIフレームワークを使用した開発、シンプルなSPAの実装経験あり。'},
+        { name: 'Vue.js', value: 2.5, summary: 'UIフレームワークを使用した開発、シンプルなSPAの実装経験あり。'},
         { name: 'Git', value: null, summary: '開発に困らない程度は理解。'},
         { name: 'Firebase', value: null, summary: 'Firebase Auth、Realtime databaseの使用経験あり。'},
         { name: 'heroku', value: null, summary: ''},

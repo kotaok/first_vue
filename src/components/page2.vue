@@ -43,10 +43,14 @@ export default {
 }
 
 .text {
+  width: 80%;
+  margin: auto;
   font-size: 20px;
-  margin: 50px 0px;
-  color: #3F3F3F;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 
 .jump {
   font-family: brandon-grotesque, sans-serif;

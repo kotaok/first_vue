@@ -21,7 +21,7 @@
 
 .footer-link-parent {
   background-color: #030065;
-  padding: 70px 0px;
+  padding: 30px 0px;
   margin-top: 40px;
 }
 
@@ -45,12 +45,14 @@
 }
 
 .footer-title {
+  width: 70%;
+  margin: auto;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 
 .faicon {

@@ -32,7 +32,7 @@ export default {
 
 .main-skill div h1 {
   margin: 20px 0px;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .main-skill div {

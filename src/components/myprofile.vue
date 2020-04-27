@@ -15,6 +15,7 @@
 #profile {
   width: 100%;
   height: 70%;
+  margin-top: 30px;
   padding: 90px 0px;
   background-color: #f3f3f3;
 }

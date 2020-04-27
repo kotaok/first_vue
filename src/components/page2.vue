@@ -1,6 +1,10 @@
 <template>
   <div class="block">
     <h1 class="title">ABOUT</h1>
+    <div class="banner">
+      <p>私について</p>
+      <i class="el-icon-arrow-down"></i>
+    </div>
     <myprofile></myprofile>
     <mainskill></mainskill>
     <div class="about-block">

@@ -1,6 +1,10 @@
 <template>
   <div class="block">
     <h1 class="title">TOP</h1>
+    <div class="banner">
+      <p>ポートフォリオサイト</p>
+      <i class="el-icon-arrow-down"></i>
+    </div>
     <topabout></topabout>
     <div>
       <router-link to="/page2" class="jump">ABOUT<i class="el-icon-right"></i></router-link>

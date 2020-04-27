@@ -79,7 +79,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
 .v-enter-active, .v-leave-active {
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 
 .v-enter, .v-leave-to {
@@ -154,6 +154,10 @@ export default {
   padding-bottom: 50px;
   border-radius: 8px;
   border: solid 1px #E0E1E5;
+}
+
+.el-card__body {
+  height: 100px;
 }
 
 

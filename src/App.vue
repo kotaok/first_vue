@@ -81,13 +81,13 @@ html,body {
   font-weight: 700;
   font-style: normal;
   font-weight: bold;
-  padding: 15px 25px;
+  padding: 20px 35px;
   margin: 0px 5px;
   text-decoration: none;
   color: #22223F;
   border-bottom: solid 2px #22223F;
   background-color: rgba(248, 249, 250, 0.733);
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 .navmenu:hover {
@@ -96,6 +96,8 @@ html,body {
   -moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  color: #e2e2e2;
+  background-color: #06006d;
 }
 
 body {

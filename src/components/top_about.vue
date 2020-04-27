@@ -34,7 +34,7 @@ export default {
 .top_block {
   width: 100%;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 25px;
   border-top: solid 1px #e6e6e6;

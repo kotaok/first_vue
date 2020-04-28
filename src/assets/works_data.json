@@ -1,0 +1,42 @@
+[
+  {
+    "name": "SlackBot",
+    "path": "/img/slackbot.png",
+    "text": "Pythonで開発した翻訳Bot",
+    "lang": "Python,Slack API",
+    "github": null,
+    "link": null
+  },
+  { 
+    "name": "ポートフォリオ",
+    "path": "/img/kotaportfolio.png",
+    "text": "HTMLとCSSで製作した最初のポートフォリオ",
+    "lang": "HTML・CSS、JavaScript",
+    "github": "https://github.com/kotaok/myportfolio",
+    "link": null
+  },
+  { 
+    "name": "WeBrain",
+    "path": "/img/webrain.png",
+    "text": "「ブレインストーミング」のアイデアを出し合えるチャットアプリ",
+    "lang": "Node.js/Express、Firebase Authentication、Realtimedatabase",
+    "github": "https://github.com/kotaok/storm-webrain",
+    "link": "https://storm-webrain.herokuapp.com/"
+  },
+  { 
+    "name": "柏キャンパスホームページ",
+    "path": "/img/kashiwa.png",
+    "text": "通学しているキャンパスのホームページ",
+    "lang": "PHP",
+    "github": null,
+    "link": "http://n-kashiwa.main.jp/"
+  },
+  { 
+    "name": "ポートフォリオ(New)",
+    "path": "/img/portfolio_image.png",
+    "text": "Vue.jsを使って開発した新しいポートフォリオ",
+    "lang": "Vue.js",
+    "github": "https://github.com/kotaok/first_vue",
+    "link": null
+  }
+]

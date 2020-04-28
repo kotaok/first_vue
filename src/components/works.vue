@@ -34,7 +34,7 @@
           <img :src="dialogpath" :alt="dialogname" class="dialog-image" width="40%" height="30%">
         </div>
         <span class="dialogtext">{{ dialogtext }}</span>
-        <p>{{ dialoglang }}</p>
+        <p>主な使用言語/フレームワークなど:{{ dialoglang }}</p>
         <div v-if="dialogurl != null" class="dialog-icon">
           <a :href="dialogurl" target="_blank" class="jump">サイトへ移動</a>
         </div>
@@ -49,16 +49,11 @@
 </template>
 
 <script>
+import Items from '../assets/works_data.json'
 export default {
   data: function() {
     return {
-      items: [
-        { name: 'Slackbot',path: '/img/slackbot.png',text:'Pythonで開発した翻訳Bot', lang: "主な使用言語/フレームワークなど: Python、Slack API", github: null, link: null},
-        { name: 'ポートフォリオ',path: '/img/kotaportfolio.png',text: 'HTMLとCSSで製作した最初のポートフォリオ', lang: "主な使用言語/フレームワークなど: HTML・CSS、JavaScript", github: "https://github.com/kotaok/myportfolio", link: null},
-        { name: 'WeBrain',path: '/img/webrain.png',text: '「ブレインストーミング」のアイデアを出し合えるチャットアプリ', lang: "主な使用言語/フレームワークなど:Node.js/Express、Firebase Authentication、Realtimedatabase", github: "https://github.com/kotaok/storm-webrain", link: "https://storm-webrain.herokuapp.com/"},
-        { name: '柏キャンパスホームページ',path: '/img/kashiwa.png',text: '通学しているキャンパスのホームページ', lang: "主な使用言語/フレームワークなど:PHP", github: null, link: "http://n-kashiwa.main.jp/"},
-        { name: 'ポートフォリオ(New)',path: '/img/portfolio_image.png',text: 'Vue.jsを使って開発した新しいポートフォリオ', lang: "主な使用言語/フレームワークなど:Vue.js", github: "https://github.com/kotaok/first_vue", link: null}
-      ],
+      items: Items,
       dialogVisible: false,
       dialogname: null,
       dialogtext: null,
@@ -113,7 +108,6 @@ export default {
   font-weight: 500;
   font-size: 19px;
   text-align: left;
-  
 }
 
 .item-summary {

@@ -97,7 +97,7 @@ export default {
 .item {
   width: 500px;
   height: 375px;
-  margin: 20px;
+  margin: 20px 20px 100px;
   transition: all 200ms ease;
   overflow: hidden;
   border-radius: 20px;
@@ -125,8 +125,8 @@ export default {
 }
 
 .item:hover {
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
-  opacity: 0.5;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
 }
 
 .item img {

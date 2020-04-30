@@ -85,8 +85,11 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 95%;
+  background-color: #efefef;
+  width: 100%;
   margin: auto;
+  margin-top: 50px;
+  padding-top: 30px;
 }
 
 .item {

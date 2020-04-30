@@ -1,6 +1,6 @@
 <template>
   <div class="skill-block">
-    <transition-group tag="div" class="list" appear>
+    <transition-group tag="div" class="skilllist" appear>
       <div class="skill" v-for="skill of skills" v-bind:key="skill.name">
         <p class="skill-title">{{ skill.name }}
           <el-rate
@@ -52,8 +52,8 @@ export default {
 }
 
 .skill {
-  width: 70%;
-  margin: 18px 0px;
+  width: 100%;
+  margin: 30px 0px;
 }
 
 .skill-title {
@@ -84,7 +84,8 @@ export default {
 @media screen and (max-width: 600px) {
   .skill {
     width: 80%;
-    margin: 15px 0px;
+    margin: auto;
+    margin-bottom: 50px;
     border-bottom: solid 1px #efefef;
   }
 

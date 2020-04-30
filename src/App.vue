@@ -3,8 +3,8 @@
     <myheader></myheader>
     <div id="nav">
       <router-link to="/" class="navmenu">TOP</router-link>
-      <router-link to="/page2" class="navmenu">ABOUT</router-link>
-      <router-link to="/page3" class="navmenu">WORKS</router-link>
+      <router-link to="/about" class="navmenu">ABOUT</router-link>
+      <router-link to="/works" class="navmenu">WORKS</router-link>
     </div>
     <transition mode="out-in">
       <router-view></router-view>

@@ -12,7 +12,7 @@
       <p class="text">言語・フレームワーク、ツールなど</p>
       <myskills></myskills>
       <div>
-      <router-link to="/page3" class="jump">WORKS<i class="el-icon-right"></i></router-link>
+      <router-link to="/works" class="jump">WORKS<i class="el-icon-right"></i></router-link>
       </div>
     <router-view></router-view>
     </div>

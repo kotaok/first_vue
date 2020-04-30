@@ -7,12 +7,12 @@
     </div>
     <topabout></topabout>
     <div>
-      <router-link to="/page2" class="jump">ABOUT<i class="el-icon-right"></i></router-link>
+      <router-link to="/about" class="jump">ABOUT<i class="el-icon-right"></i></router-link>
     </div>
     <router-view></router-view>
     <topworks></topworks>
     <div>
-      <router-link to="/page3" class="jump">WORKS<i class="el-icon-right"></i></router-link>
+      <router-link to="/works" class="jump">WORKS<i class="el-icon-right"></i></router-link>
     </div>
     <router-view></router-view>
     <topblog></topblog>

@@ -9,7 +9,8 @@
           dialoglang = item.lang,
           dialogpath = item.path,
           dialoggithub = item.github,
-          dialogurl = item.link"
+          dialogurl = item.link,
+          dialogsummary = item.summary"
           >
         <img 
           :src="item.path" 
@@ -34,7 +35,8 @@
           <img :src="dialogpath" :alt="dialogname" class="dialog-image" width="40%" height="30%">
         </div>
         <span class="dialogtext">{{ dialogtext }}</span>
-        <p>主な使用言語/フレームワークなど:{{ dialoglang }}</p>
+        <p class="dialog-lang">主な使用言語/フレームワークなど:{{ dialoglang }}</p>
+        <p class="dialog-summary">{{ dialogsummary }}</p>
         <div v-if="dialogurl != null" class="dialog-icon">
           <a :href="dialogurl" target="_blank" class="jump">サイトへ移動</a>
         </div>
@@ -60,7 +62,8 @@ export default {
       dialoglang: null,
       dialogpath: null,
       dialoggithub: null,
-      dialogurl: null
+      dialogurl: null,
+      dialogsummary: null
     };
   },
   methods: {
@@ -157,6 +160,16 @@ export default {
   height: 100px;
 }
 
+.dialog-summary {
+  width: 45%;
+  margin: auto;
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
 
 @media screen and (max-width: 600px) {
   .item {
@@ -186,6 +199,14 @@ export default {
 
   .dialog-box {
     padding: 20px 20px 50px 20px;
+  }
+
+  .dialog-summary {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-size: 18px;
   }
 }
 

@@ -5,7 +5,8 @@
     "text": "Pythonで開発した翻訳Bot",
     "lang": "Python,Slack API",
     "github": null,
-    "link": null
+    "link": null,
+    "summary": "メッセージを投稿すると日本語→英語に翻訳してくれるBotを開発しました。開発にはPythonのslackbotライブラリ、Translatorライブラリを使用しています。"
   },
   { 
     "name": "ポートフォリオ",
@@ -13,7 +14,8 @@
     "text": "HTMLとCSSで製作した最初のポートフォリオ",
     "lang": "HTML・CSS、JavaScript",
     "github": "https://github.com/kotaok/myportfolio",
-    "link": null
+    "link": null,
+    "summary": "HTML・CSSを使い、制作したポートフォリオです。レスポンシブデザインを意識してページを作成しました。"
   },
   { 
     "name": "WeBrain",
@@ -21,7 +23,8 @@
     "text": "「ブレインストーミング」のアイデアを出し合えるチャットアプリ",
     "lang": "Node.js/Express、Firebase Authentication、Realtimedatabase",
     "github": "https://github.com/kotaok/storm-webrain",
-    "link": "https://storm-webrain.herokuapp.com/"
+    "link": "https://storm-webrain.herokuapp.com/",
+    "summary": "ブレストのアイデアを共有できるwebチャットアプリです。メッセージの保存、反映にはFirebaseのRealtimeDatabaseを活用しています。"
   },
   { 
     "name": "柏キャンパスホームページ",
@@ -29,7 +32,8 @@
     "text": "通学しているキャンパスのホームページ",
     "lang": "PHP",
     "github": null,
-    "link": "http://n-kashiwa.main.jp/"
+    "link": "http://n-kashiwa.main.jp/",
+    "summary": "通学しているキャンパスのホームページを開発しました。"
   },
   { 
     "name": "ポートフォリオ(New)",
@@ -37,6 +41,7 @@
     "text": "Vue.jsを使って開発した新しいポートフォリオ",
     "lang": "Vue.js",
     "github": "https://github.com/kotaok/first_vue",
-    "link": null
+    "link": null,
+    "summary": "Vue(vue-cli)の学習を兼ねて、新しく制作したポートフォリオです。SPAの実装や、UIコンポーネントも活用しました。"
   }
 ]

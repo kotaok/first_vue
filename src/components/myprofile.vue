@@ -1,6 +1,6 @@
 <template>
   <div id="profile">
-    <el-avatar :size="100">アイコン</el-avatar>
+    <el-avatar :size="100"><img src="/img/icon.jpg" alt=""></el-avatar>
     <h2>kota</h2>
     <p>2019年からプログラミングを学習している高校生です。</p>
     <p>フロントエンドに興味があります。</p>

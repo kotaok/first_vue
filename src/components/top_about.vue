@@ -1,10 +1,10 @@
 <template>
   <div class="top_block">
-    <h2 class="index-text">ABOUT</h2>
+    <h2 class="index-text" data-aos="fade-right">ABOUT</h2>
       <div class="top_about_block">
         <div class="top_about_profile">
           <h2>kota</h2>
-          <p>ものづくりが好きで、1年前からプログラミングを学び始めた高校生です。webのフロントエンドを中心に、競技プログラミングにも取り組んでいます。</p>
+          <p>ものづくりが好きで、2019年からプログラミングを学び始めた高校生です。webのフロントエンドを中心に、競技プログラミングにも取り組んでいます。</p>
         </div>
       </div>
     <el-divider></el-divider>
@@ -25,9 +25,11 @@
     </div>
   </div>
 </template>
+
+
+
 <script>
 export default {
-  
 }
 </script>
 <style>

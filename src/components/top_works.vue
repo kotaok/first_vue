@@ -1,6 +1,6 @@
 <template>
   <div class="top_block">
-    <h2 class="index-text">WORKS</h2>
+    <h2 class="index-text" data-aos="fade-right">WORKS</h2>
     <div class="block">
       <el-carousel indicator-position="outside" :height="carousel_height">
         <el-carousel-item v-for="photo of gallery" :key="photo.path">
@@ -15,9 +15,9 @@ export default {
   data: function() {
     return {
       gallery: [
-        {path: '/img/kotaportfolio.png'},
+        {path: '/img/develop.jpg'},
+        {path: '/img/face.png'},
         {path: '/img/webrain.png'},
-        {path: '/img/kashiwa_2.png'},
         {path: '/img/portfolio_image.png'}
       ],
       carousel_height: "500px"

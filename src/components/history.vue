@@ -31,7 +31,7 @@ export default {
       }, {
         content: 'ITパスポート合格',
         timestamp: '2019年12月',
-        image: '/img/history_2.png'
+        image: '/img/develop.jpg'
       }, {
         content: 'ポートフォリオの作成',
         timestamp: '2019年12月',
@@ -41,13 +41,13 @@ export default {
         timestamp: '2020年1月',
         image: '/img/history_4.png'
       }, {
-        content: 'キャンパスホームページの開発',
-        timestamp: '2020年3月',
-        image: '/img/history_5.png'
-      }, {
         content: 'ポートフォリオの再作成',
         timestamp: '2020年4月',
         image: '/img/history_6.png'
+      }, {
+        content: '異能vation プロトタイプ作成',
+        timestamp: '2020年6月',
+        image: '/img/develop.jpg'
       }]
     };
   }

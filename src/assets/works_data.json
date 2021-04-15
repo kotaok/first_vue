@@ -1,7 +1,7 @@
 [
   {
     "name": "SlackBot",
-    "path": "/img/slackbot.png",
+    "path": "/img/develop.jpg",
     "text": "Pythonで開発した翻訳Bot",
     "lang": "Python,Slack API",
     "github": null,
@@ -10,8 +10,8 @@
   },
   { 
     "name": "ポートフォリオ",
-    "path": "/img/kotaportfolio.png",
-    "text": "HTMLとCSSで製作した最初のポートフォリオ",
+    "path": "/img/develop.jpg",
+    "text": "HTMLとCSSで製作した、はじめてのポートフォリオ",
     "lang": "HTML・CSS、JavaScript",
     "github": "https://github.com/kotaok/myportfolio",
     "link": null,
@@ -27,15 +27,6 @@
     "summary": "ブレストのアイデアを共有できるwebチャットアプリです。メッセージの保存、反映にはFirebaseのRealtimeDatabaseを活用しています。"
   },
   { 
-    "name": "柏キャンパスホームページ",
-    "path": "/img/kashiwa.png",
-    "text": "通学しているキャンパスのホームページ",
-    "lang": "PHP",
-    "github": null,
-    "link": "http://n-kashiwa.main.jp/",
-    "summary": "通学しているキャンパスのホームページを開発しました。"
-  },
-  { 
     "name": "ポートフォリオ(New)",
     "path": "/img/portfolio_image.png",
     "text": "Vue.jsを使って開発した新しいポートフォリオ",
@@ -43,5 +34,24 @@
     "github": "https://github.com/kotaok/first_vue",
     "link": null,
     "summary": "Vue(vue-cli)の学習を兼ねて、新しく制作したポートフォリオです。SPAの実装や、UIコンポーネントも活用しました。"
+  },
+  {
+    "name": "異能vation プロトタイプ作成",
+    "path": "/img/develop.jpg",
+    "text": "Vue.jsでプロトタイプ作成",
+    "lang": "Vue.js",
+    "github": null,
+    "link": null,
+    "summary": "異能vationに応募したアイデアのプロトタイプ作成を行いました。SNSアプリを想定し、webアプリ内でユーザー登録からプロフィールの設定機能の実装等をしています。"
+  },
+  {
+    "name": "emocha 絵文字チャットアプリ",
+    "path": "/img/face.png",
+    "text": "絵文字チャットアプリの作成",
+    "lang": "Vue.js",
+    "github": null,
+    "link": "https://emocha-ee72b.web.app/",
+    "summary": "絵文字だけでチャットできるwebアプリを開発しました。"
   }
+
 ]

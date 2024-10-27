@@ -1,9 +1,9 @@
 <template>
   <div id="profile">
     <el-avatar :size="100"><img src="/img/icon.jpg" alt=""></el-avatar>
-    <h2>kota</h2>
-    <p>2019年からプログラミングを学習している高校生です。</p>
-    <p>フロントエンドをメインに開発しています。</p>
+    <h2>lmori</h2>
+    <p>会津大学コンピュータ理工学部</p>
+    <p>コンピュータ理工学科2年</p>
   </div>
 </template>
 

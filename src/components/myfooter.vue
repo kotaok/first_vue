@@ -4,11 +4,11 @@
     <p class="footer-title">LINK</p>
     <div class="footer-link">
       <a href="https://github.com/kotaok" target="_blank"><font-awesome-icon :icon="['fab','github']" size="2x" color="#ffffff"/></a>
-      <a href="https://qiita.com/lemon_melon" target="_blank"><font-awesome-icon :icon="['fas','search']" size="2x" color="#ffffff"/></a>
+      <a href="https://github.com/lmorinn" target="_blank"><font-awesome-icon :icon="['fab','github']" size="2x" color="#1aad41"/></a>
     </div>
   </div>
   <div id="footer">
-    <p>©︎2020 kota</p>
+    <p>©︎2024 lmori</p>
   </div>
 </div>
 </template>

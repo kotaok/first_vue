@@ -7,13 +7,13 @@
     <div class="main-skill">
       <div>
         <i class="el-icon-monitor"></i>
-        <h1>フロントエンド開発</h1>
-        <p>このサイトのコードを書けるレベルで、最近はVue.jsでの開発がマイブームです。スマホ表示の対応なども実装できます。</p>
+        <h1>競技プログラミング</h1>
+        <p></p>
       </div>
       <div>
         <i class="el-icon-setting"></i>
         <h1>webアプリケーション開発</h1>
-        <p>環境構築から開発、heroku等へのデプロイと経験があります。データベース・SQLも、経験は薄いですが触れます。</p>
+        <p></p>
       </div>
     </div>
   </div>

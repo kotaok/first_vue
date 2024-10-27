@@ -1,7 +1,7 @@
 <template>
   <div class="header">
    <div>
-     <p>PORTFOLIO</p>
+     <p>lmori's portfolio</p>
    </div>
   </div>
 </template>

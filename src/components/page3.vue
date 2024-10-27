@@ -2,7 +2,6 @@
   <div class="block">
     <h1 class="title">WORKS</h1>
     <div class="banner">
-      <p>これまでに製作した作品</p>
       <i class="el-icon-arrow-down"></i>
     </div>
     <myworks></myworks>

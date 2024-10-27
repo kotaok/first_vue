@@ -2,7 +2,7 @@
   <div class="block">
     <h1 class="title">TOP</h1>
     <div class="banner">
-      <p>ポートフォリオサイト</p>
+      <p>About me</p>
       <i class="el-icon-arrow-down"></i>
     </div>
     <topabout></topabout>

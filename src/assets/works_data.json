@@ -8,7 +8,7 @@
     "link": null,
     "summary": "メッセージを投稿すると日本語→英語に翻訳してくれるBotを開発しました。開発にはPythonのslackbotライブラリ、Translatorライブラリを使用しています。"
   },
-  { 
+  {
     "name": "ポートフォリオ",
     "path": "/img/develop.jpg",
     "text": "HTMLとCSSで製作した、はじめてのポートフォリオ",
@@ -17,7 +17,7 @@
     "link": null,
     "summary": "HTML・CSSを使い、制作したポートフォリオです。レスポンシブデザインを意識してページを作成しました。"
   },
-  { 
+  {
     "name": "WeBrain",
     "path": "/img/webrain.png",
     "text": "「ブレインストーミング」のアイデアを出し合えるチャットアプリ",
@@ -26,14 +26,14 @@
     "link": "https://storm-webrain.herokuapp.com/",
     "summary": "ブレストのアイデアを共有できるwebチャットアプリです。メッセージの保存、反映にはFirebaseのRealtimeDatabaseを活用しています。"
   },
-  { 
+  {
     "name": "ポートフォリオ(New)",
     "path": "/img/portfolio_image.png",
     "text": "Vue.jsを使って開発した新しいポートフォリオ",
     "lang": "Vue.js",
     "github": "https://github.com/kotaok/first_vue",
     "link": null,
-    "summary": "Vue(vue-cli)の学習を兼ねて、新しく制作したポートフォリオです。SPAの実装や、UIコンポーネントも活用しました。"
+    "summary": "Vueの学習を兼ねて、新しく制作したポートフォリオです。"
   },
   {
     "name": "異能vation プロトタイプ作成",
@@ -52,6 +52,23 @@
     "github": null,
     "link": "https://emocha-ee72b.web.app/",
     "summary": "絵文字だけでチャットできるwebアプリを開発しました。"
+  },
+  {
+    "name": "競技プログラミングのためのライブラリ",
+    "path": "/img/develop.jpg",
+    "text": "C++による競技プログラミングライブラリ",
+    "lang": "C++",
+    "github": "https://github.com/lmorinn/library",
+    "link": "https://lmorinn.github.io/library/",
+    "summary": null
+  },
+  {
+    "name": "FM-indexによるCtrl + Fの実装",
+    "path": "/img/develop.jpg",
+    "text": "Zli 大LTでの発表",
+    "lang": "C++",
+    "github": null,
+    "link": "https://uaizuacjp-my.sharepoint.com/:p:/g/personal/s1310043_o365_u-aizu_ac_jp/EeVImXDSKghGnlub3U8KSvIBMDmamdetvNonVG1oV06VfA?e=E1bp8b",
+    "summary": null
   }
-
 ]

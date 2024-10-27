@@ -29,7 +29,7 @@ export default {
         timestamp: '2019年6月',
         image: '/img/history_1.png'
       }, {
-        content: 'ITパスポート合格',
+        content: 'ITパスポート 合格',
         timestamp: '2019年12月',
         image: '/img/develop.jpg'
       }, {
@@ -37,18 +37,22 @@ export default {
         timestamp: '2019年12月',
         image: '/img/history_3.png'
       }, {
-        content: 'チャットwebアプリの開発',
-        timestamp: '2020年1月',
-        image: '/img/history_4.png'
-      }, {
-        content: 'ポートフォリオの再作成',
+        content: 'ポートフォリオv2作成',
         timestamp: '2020年4月',
         image: '/img/history_6.png'
-      }, {
-        content: '異能vation プロトタイプ作成',
+      },{
+        content: 'AtCoder Algorithm Rating400到達',
         timestamp: '2020年6月',
         image: '/img/develop.jpg'
-      }]
+      }, {
+        content: '応用情報技術者試験 合格',
+        timestamp: '2023年12月',
+        image: '/img/develop.jpg'
+      },{
+        content: 'AtCoder Algorithm Rating800到達',
+        timestamp: '2023年12月',
+        image: '/img/develop.jpg'
+      }, ]
     };
   }
 }

@@ -3,15 +3,15 @@
     <h2 class="index-text" data-aos="fade-right">ABOUT</h2>
       <div class="top_about_block">
         <div class="top_about_profile">
-          <h2>kota</h2>
-          <p>ものづくりが好きで、2019年からプログラミングを学び始めた高校生です。webのフロントエンドを中心に、競技プログラミングにも取り組んでいます。</p>
+          <h2>lmori</h2>
+          <p>会津大学コンピュータ理工学部 コンピュータ理工学科 2年</p>
         </div>
       </div>
     <el-divider></el-divider>
     <div class="top_about_icon">
-      <p class="caption">好きなこと</p>
+      <p class="caption">主な取り組み</p>
       <div class="icon_parent">
-        <p>フロントエンド開発</p>
+        <p>競技プログラミング</p>
         <div class="icon_block">
           <i class="el-icon-monitor"></i>
         </div>
